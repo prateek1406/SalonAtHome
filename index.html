@@ -26,12 +26,18 @@ html {
 .jumbotron-fluid
 {
     
-   background-image:url('img/banner.jpg');
+   background-image:
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url('img/banner.jpg');
    background-size:cover;
    background-repeat: no-repeat;
    background-position:center;
    height:450px;
    position: relative;
+   margin-top:60px;
 
 }
 .box
@@ -121,28 +127,28 @@ html {
 </style>
 </head>
 <body>
-<div class="jumbotron-fluid">
-    <div class="navbar-fixed" style="position:fixed;top:0;width:100%;">
-        <nav style="height:65px;width:100%;background-color:#272727;">
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo left"><img src="img/logo.jpg" class="logo" alt="logo" style="height:55px;margin-left:10px;margin-top:5px;" /></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons"><i class="lni-menu" style="color:white;"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Home</a></li>
-                    <li><a href="#about" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">About Us</a></li>
-                    <li><a href="#services" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Services</a></li>
-                    <li><a href="#footer" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
-    </div>
-    <div class="container-fluid" style="font-style: normal;">
+<div class="navbar-fixed" style="position:fixed;top:0;width:100%;">
+    <nav style="height:65px;width:100%;background-color:#272727;">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo left"><img src="img/logo.jpg" class="logo" alt="logo" style="height:55px;margin-left:10px;margin-top:5px;" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons"><i class="lni-menu" style="color:white;"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#top" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Home</a></li>
+                <li><a href="#about" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">About Us</a></li>
+                <li><a href="#services" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Services</a></li>
+                <li><a href="#footer" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo" style="font-style:normal">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+</div>
+<div class="jumbotron-fluid" id="top">
+   <div class="container-fluid" style="font-style: normal;">
         <div class="row">
           <div class="col-12"><div class="text">WE MAKE YOUR HAIR</div></div>
           <div class="col-6"><div class="text1">LOOK</div></div>
@@ -191,7 +197,7 @@ html {
             <div style="margin-top:20px;font-size:30px;text-align:center;color:#323648;">We Make Your Hair Look Great, Perfect!</div> 
         </div>
         <div class="col-12">
-           <div style="text-align:center;margin-top:10px;font-size:15px;letter-spacing:2px;">SalonAtDoorStep provides you an amazing opportunity to get you a new look at your home. 
+           <div style="text-align:justify;margin-top:10px;font-size:15px;word-spacing:2px;letter-spacing:2px;">SalonAtDoorStep provides you an amazing opportunity to get you a new look at your home. 
             Our team of certified professionals and dedicated staff will strive to provide the highest level of professionalism to each and every client, thereby building a long-lasting relationship of trust and commitment.
             Furthermore we understand that in order to achieve the best possible results we must not only provide the best quality of work but also provide a comforting and nurturing environment.
             We hope to pleasantly surprise each and every client with this high level of service and a mutual respect for each other’s lives and valuable time.
@@ -210,7 +216,7 @@ html {
                 <div class="col-12" style="text-align:center;margin-top:20px;"><i class="fas fa-cut" style="font-size:40px;color:#da9d40;padding:10px;"></i></div>
                 <div class="col-12"style="margin-top:10px;color:#323648;font-weight:bold;font-size:40px;text-align:center;">Making Hair Style</div> 
                 <div class="col-12" style="margin-top:5px;font-size:20px;text-align:center;color:#323648;">FOR MAN GROWING BEARDS!</div> 
-                <div class="col-12" style="text-align:center;font-size:20px;margin-top:20px;letter-spacing:2px;">Sed ut perspiciatis unde omnis iste natus error ipsum voluptatem ut accusa ntium dolor remque laudantium, totam rem aperiam, eaque ipsa quae abse illo quasi sed architecto beatae vitae dicta sut dolor etr explicabo. Morbi a luctus magna, eu rutrum turpis. Sed perspiciatis unde.</div>
+                <div class="col-12" style="text-align:justify;font-size:15px;margin-top:20px;letter-spacing:2px;word-spacing: 2px;">Sed ut perspiciatis unde omnis iste natus error ipsum voluptatem ut accusa ntium dolor remque laudantium, totam rem aperiam, eaque ipsa quae abse illo quasi sed architecto beatae vitae dicta sut dolor etr explicabo. Morbi a luctus magna, eu rutrum turpis. Sed perspiciatis unde.</div>
             </div>
          </div>
     </div>
