@@ -32,7 +32,7 @@ html {
         rgba(0,0,0,0.6),
         rgba(0,0,0,0.6)
     ),
-    url('img/banner.jpg');
+    url('img/banner.webp');
    background-size:cover;
    background-repeat: no-repeat;
    background-position:center;
@@ -97,6 +97,24 @@ html {
     /* margin-right:50px; */
     text-shadow:3px 4px 6px rgba(45, 45, 45, 0.15);
 }
+.book 
+{
+    width:150px;
+    height:50px;
+    color:#fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    display: inline-block;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top:20px;
+}
+.book:hover
+{
+    color:white;
+    text-decoration: none;
+} 
 @media (max-width: 575.98px) {
 .text 
 {
@@ -126,7 +144,19 @@ html {
     margin-left:-20px;
     text-shadow:3px 4px 6px rgba(45, 45, 45, 0.15);
 }
-
+.book 
+{
+    width:150px;
+    height:50px;
+    color:#fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    display: inline-block;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top:20px;
+}
  }
 </style>
 </head>
@@ -148,7 +178,7 @@ html {
         </div>
     </nav>
 </div>
-<ul class="sidenav" id="mobile-demo" style="font-style:normal">
+<ul class="sidenav" id="mobile-demo" style="font-style:normal;font-family: 'Poppins', sans-serif;">
     <li><a class="sidenav-close" href="#top">Home</a></li>
     <li><a class="sidenav-close" href="#about">About Us</a></li>
     <li><a class="sidenav-close" href="#services">Services</a></li>
@@ -161,6 +191,7 @@ html {
           <div class="col-12"><div class="text">WE MAKE YOUR HAIR</div></div>
           <div class="col-6"><div class="text1">LOOK</div></div>
           <div class="col-6"><div class="text2">PERFECT</div></div>
+          <div class="col-12"><div style="text-align:center;"><a class="book" href="#book"style="padding:10px 10px;font-size:16px;">Book Now</a></div></div>
         </div>
     </div>
 </div>
@@ -185,7 +216,7 @@ html {
 <div class="container-fluid" style="margin-top:50px;font-style:normal;">
     <div class="row">
         <div class="col-lg-7 col-xs-12 col-md-12 col-sm-12">
-            <div style="text-align:center;width:100%;margin-top:50px;"><img class="img-fluid" src="img/left.jpg"></div>
+            <div style="text-align:center;width:100%;margin-top:50px;"><img class="img-fluid" src="img/left.webp"></div>
         </div>
         <div class="col-lg-5 col-xs-12 col-md-12 col-sm-12" style="background:#f6f6f6">
             <div class="row">
@@ -197,7 +228,7 @@ html {
          </div>
     </div>
 </div>
-<div class="container-fluid"  style="background:#f6f6f6;margin-top:50px;font-family: 'Poppins', sans-serif;font-style:normal;">
+<div class="container-fluid" id="book" style="background:#f6f6f6;margin-top:50px;font-family: 'Poppins', sans-serif;font-style:normal;">
     <div class="row">
         <div class="col-lg-7 col-xs-12">
             <div class="row">
@@ -215,7 +246,7 @@ html {
              </div>
         </div>
         <div class="col-lg-5 col-xs-12">
-            <div style="text-align:center;margin-top:20px"><img class="img-fluid" src="img/facts.png"></div>
+            <div style="text-align:center;margin-top:20px"><img class="img-fluid" src="img/facts.webp"></div>
         </div>
     </div>
 </div>
