@@ -19,7 +19,8 @@ body
 {
     color:black;
     font-family: 'Source Sans Pro', sans-serif;
-    font-style:normal;
+    font-style:normal !important;
+
 }
 html {
   scroll-behavior: smooth;
@@ -115,6 +116,103 @@ html {
     color:white;
     text-decoration: none;
 } 
+.whychoose 
+{
+    padding:10px;
+    width:600px;
+    height:450px;
+}
+#features
+{
+  background-color:white;
+  padding:7% 15%;
+  position:relative;
+  z-index:1;
+}
+.feature-box
+{
+  text-align:center;
+  padding:5%;
+}
+.feature-icon
+{
+  margin-bottom:10px;
+  color:#ef8172;;
+  font-size:60px;
+  text-align:center;
+  padding:10px;
+}
+.feature-icon:hover
+{
+  color:#ff4c68;
+}
+
+.container {
+  position: relative;
+  width:100%;
+  height:100%;
+  margin-top:20px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #EFA697;
+  opacity:0.9;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.2s ease;
+}
+.hair_cut 
+{
+  height:320px;
+  width:360px;
+}
+.beard_grooming 
+{
+  width:320px;
+  height:320px;
+  margin-left:20px;
+}
+.facial 
+{
+  height:300px;
+}
+.pedic_medic
+{
+  height:300px;
+} 
+.massage 
+{
+  height:290px;
+}
+
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text_overlay{
+  color: white;
+  font-size:30px;
+  font-weight:bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 @media (max-width: 575.98px) {
 .text 
 {
@@ -157,6 +255,23 @@ html {
     background: rgba(255, 255, 255, 0.1);
     margin-top:20px;
 }
+.whychoose
+{
+    width:500px;
+    height:300px;
+    padding:5px;
+}
+.hair_cut 
+{
+   height:320px;
+   width:300px;
+}
+.beard_grooming 
+{
+  width:270px;
+  height:320px;
+  /* margin-left:20px; */
+}
  }
 </style>
 </head>
@@ -198,7 +313,7 @@ html {
 <div class="container-fluid" id="about" style="font-style:normal;">
     <div class="row">
         <div class="col-12">
-           <div style="margin-top:30px;color:#323648;font-weight:bold;font-size:40px;text-align:center;font-family: 'Poppins', sans-serif;">WELCOME TO OUR HAIR SALON</div> 
+           <div style="margin-top:30px;color:#323648;font-weight:bold;font-size:40px;text-align:center;font-family: 'Poppins', sans-serif;">WELCOME TO OUR UNISEX SALON</div> 
         </div>
         <!-- <div class="col-12">
             <div style="margin-top:20px;font-size:30px;text-align:center;color:#323648;">We Make Your Hair Look Great, Perfect!</div> 
@@ -216,21 +331,107 @@ html {
 <div class="container-fluid" style="margin-top:50px;font-style:normal;">
     <div class="row">
         <div class="col-lg-7 col-xs-12 col-md-12 col-sm-12">
-            <div style="text-align:center;width:100%;margin-top:50px;"><img class="img-fluid" src="img/left.webp"></div>
+            <div style="text-align:center;width:100%;margin-top:50px;"><img class="img-fluid" src="img/intro.png"></div>
         </div>
         <div class="col-lg-5 col-xs-12 col-md-12 col-sm-12" style="background:#f6f6f6">
             <div class="row">
                 <div class="col-12" style="text-align:center;margin-top:20px;"><i class="fas fa-cut" style="font-size:40px;color:#da9d40;padding:10px;"></i></div>
-                <div class="col-12"style="margin-top:10px;color:#323648;font-weight:bold;font-size:35px;text-align:center;font-family: 'Poppins', sans-serif;">Making Hair Style in COVID-19</div> 
-                <div class="col-12" style="margin-top:5px;font-size:20px;text-align:center;color:#323648;font-family: 'Poppins', sans-serif;">FOR MAN GROWING BEARDS!</div> 
+                <div class="col-12"style="margin-top:10px;color:#323648;font-weight:bold;font-size:35px;text-align:center;font-family: 'Poppins', sans-serif;">Safe and Secure Service in COVID-19</div> 
+                <!-- <div class="col-12" style="margin-top:5px;font-size:20px;text-align:center;color:#323648;font-family: 'Poppins', sans-serif;">FOR MAN GROWING BEARDS!</div>  -->
                 <div class="col-12" style="text-align:justify;font-size:16px;margin-top:20px;letter-spacing:2px;font-family: 'Source Sans Pro', sans-serif">As we work as a community to prepare for the impact of COVID-19, we wanted to share how SalonAtDoorstep is addressing the current situation. The health and safety of our employees, customers, and communities are our primary concern. There are a number of measures we are taking to ensure we manage to safely get through this fluid situation while continuing to serve our customers, partners, and employees effectively.</div>
             </div>
          </div>
     </div>
 </div>
+<section id="offerings">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div style="margin-top:30px;color:#323648;font-weight:bold;font-size:40px;text-align:center;font-family: 'Poppins', sans-serif;font-style:normal;">Our Gallery</div> 
+             </div>
+             <div class="col-lg-4">
+                <div class="container">
+                  <img src="img/hair_cutting.jpg" alt="Avatar" class="image hair_cut">
+                  <div class="overlay">
+                    <div class="text_overlay">Hair Dressing</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="container">
+                  <img src="img/berad grroming.jpg" alt="Avatar" class="image beard_grooming">
+                  <div class="overlay">
+                    <div class="text_overlay">Beard Grooming</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="container">
+                      <img src="img/facial1.jpeg" alt="Avatar" class="image facial">
+                      <div class="overlay">
+                        <div class="text_overlay">Facial</div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-12" style="height:30px;"></div>
+              <div class="col-lg-4">
+                <div class="container">
+                    <img src="img/pedic.jpg" alt="Avatar" class="image pedic_medic">
+                    <div class="overlay">
+                      <div class="text_overlay">Manicure & Pedicure</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="container">
+                  <img src="img/massage1.jpg" alt="Avatar" class="image massage">
+                  <div class="overlay">
+                    <div class="text_overlay">Body Massage</div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="container">
+                <img src="img/polishing.jpg" alt="Avatar" class="image polishing" style="height:290px;">
+                <div class="overlay">
+                  <div class="text_overlay">Body Polishing</div>
+                </div>
+              </div>
+          </div>
+          <div class="col-12" style="height:30px;"></div>
+          <div class="col-lg-4">
+            <div class="container">
+                <img src="img/threading.jpg" alt="Avatar" class="image" style="height:290px;">
+                <div class="overlay">
+                  <div class="text_overlay">Threading</div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="container">
+                <img src="img/waxing.jpeg" alt="Avatar" class="image" style="height:290px;">
+                <div class="overlay">
+                  <div class="text_overlay">Waxing</div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="container">
+                <img src="img/hair_spa.jpeg" alt="Avatar" class="image" style="height:290px;">
+                <div class="overlay">
+                  <div class="text_overlay">Hair Spa</div>
+                </div>
+              </div>
+          </div>
+          <div class="col-12" style="height:30px;"></div>
+        </div>
+    </div>
+
+
+</section> 
 <div class="container-fluid" id="book" style="background:#f6f6f6;margin-top:50px;font-family: 'Poppins', sans-serif;font-style:normal;">
     <div class="row">
-        <div class="col-lg-7 col-xs-12">
+        <div class="col-lg-6 col-xs-12">
             <div class="row">
                 <div class="col-12"><div style="color:black;font-size:40px;font-weight: bold;margin-top:50px;padding:20px;">Why Choose Us</div></div>
                 <div class="col-12"><div style="color:black;letter-spacing:2px;margin-left:15px;font-family: 'Source Sans Pro', sans-serif;font-size:16px;">SalonAtDoorStep provides you an opportunity to be trendy while being at home.
@@ -245,8 +446,8 @@ html {
                 <div class="col-6"><div class="feedback"><a  href="https://forms.gle/UrCdD7D2fCQGgi769" target="_blank"><i class="fas fa-comment-alt" style="color:white;font-size:30px;padding:8px;"></i></a></div></div>
              </div>
         </div>
-        <div class="col-lg-5 col-xs-12">
-            <div style="text-align:center;margin-top:20px"><img class="img-fluid" src="img/facts.webp"></div>
+        <div class="col-lg-6 col-xs-12">
+            <div style="text-align:center;margin-top:20px"><img class="img-fluid whychoose" src="img/image2-removebg-preview.png"></div>
         </div>
     </div>
 </div>
@@ -314,6 +515,30 @@ html {
         </div>
     </div>  
 </div>
+<section id="features">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-xs-12 feature-box">
+          <i class="fas fa-check-circle feature-icon"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+        <div class="col-lg-4 col-xs-12 feature-box">
+          <i class="fas fa-heart feature-icon"></i>
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+
+        <div class="col-lg-4 col-xs-12 feature-box">
+          <i class="fas fa-bullseye feature-icon"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 <div class="container-fluid" id="footer" style="background-color:black;position: absolute;font-style:normal;">
     <div class="row">
         <div class="col-12">
