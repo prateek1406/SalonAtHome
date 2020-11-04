@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 <link rel="stylesheet" href="owl.carousel.min.css">
 <link rel="stylesheet" href="owl.theme.default.min.css">
-<!-- <link rel="stylesheet" href="css/materialize.min.css">   -->
+<link rel="stylesheet" href="css/materialize.min.css">  
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
 
@@ -28,14 +28,15 @@ body
 html {
   scroll-behavior: smooth;
 }
-.item
+.item 
 {
-  /* background-color:chocolate; */
-  /* width:600px; */
-  height:300px;
-  border:1px solid white;
-  /* color:white; */
-  padding:30px;
+  padding:20px 20px;
+}
+.stars_rating
+{
+  width:10px;
+  display:inline-block;
+  height:10px;
 }
 </style>
 </head>
@@ -47,6 +48,14 @@ html {
         <div class="row">
           <div class="col-12"><div style="text-align:center;"><img src="img/user.jpg" style="border-radius:50%;width:100px;height:100px;"></div></div>
           <div class="col-12"><div style="text-align:center;">Congue augue egestas magna volutpat dictum suscipit ipsum egestas magna vitae purus</div></div>
+          <div class="col-12">
+            <div>
+              <div><img src="img/star.svg"  class="stars_rating" ></div>
+              <div><img src="img/star.svg"  class="stars_rating" ></div>
+              <div><img src="img/star.svg"  class="stars_rating" ></div>
+              <div><img src="img/star.svg"  class="stars_rating" ></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -99,7 +108,7 @@ html {
 </div>
 </section>
 
-<!-- <script src="js/materialize.min.js"></script> -->
+<script src="js/materialize.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="owl.carousel.min.js"></script>
 <script>
@@ -108,7 +117,7 @@ owl.owlCarousel({
   responsive:{
     0:{
         items:1,
-        nav:true
+        nav:false
     },
     600:{
         items:3,
@@ -116,16 +125,16 @@ owl.owlCarousel({
     },
     1000:{
         items:4,
-        nav:true,
+        nav:false,
         loop:false
     }
-}
-    // items:3,
-    // loop:true,
-    // margin:10,
-    // autoplay:true,
-    // autoplayTimeout:3000,
-    // autoplayHoverPause:true
+
+},
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true
 });
 $('.play').on('click',function(){
     owl.trigger('play.owl.autoplay',[3000])

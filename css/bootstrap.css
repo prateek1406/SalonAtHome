@@ -10082,7 +10082,7 @@ button.bg-dark:focus {
 }
 
 .font-italic {
-  font-style: normal !important;
+  font-style: italic !important;
 }
 
 .text-white {

@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/materialize.min.css">  
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
 
          
 <style>
@@ -26,6 +26,7 @@ body
 html {
   scroll-behavior: smooth;
 }
+/* Header Image Styles*/
 .jumbotron-fluid
 {
     
@@ -43,32 +44,8 @@ html {
    margin-top:60px;
 
 }
-.box
-{
-    height:300px;
-    margin-top:30px;
-}
- .social_icon
-{
-    width:50px;
-    height:50px;
-    margin-left:10px;
-    display:inline-block;
-    background: #191919;
-    border-radius: 50%;
-    text-align:center;
-} 
-.feedback 
-{
-    width:150px;
-    height:50px;
-    color:black;
-    background-color: cornflowerblue;
-    border: 2px solid cornflowerblue;
-    border-radius:20px;
-    text-align: center;
-    margin:auto auto;
-}
+/*HEADER TEXT STYLES*/
+
 .text 
 {
       text-align:center;
@@ -117,26 +94,19 @@ html {
     color:white;
     text-decoration: none;
 } 
-.whychoose 
-{
-    padding:10px;
-    width:600px;
-    height:450px;
+    /*OFFERINGS STYLES*/
+  .text_overlay{
+  color: white;
+  font-size:30px;
+  font-weight:bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-
-.container {
-  position: relative;
-  width:100%;
-  height:100%;
-  margin-top:20px;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -148,8 +118,15 @@ html {
   width: 100%;
   height: 0;
   transition: 1.2s ease;
-  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Lato', sans-serif;
 }
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
 .hair_cut 
 {
   height:320px;
@@ -159,7 +136,7 @@ html {
 {
   width:320px;
   height:320px;
-  margin-left:20px;
+  margin-left:15px;
 }
 .facial 
 {
@@ -173,27 +150,44 @@ html {
 {
   height:290px;
 }
+.container {
+  position: relative;
+  width:100%;
+  height:100%;
+  margin-top:20px;
+}
+
 
 
 .container:hover .overlay {
   height: 100%;
 }
 
-.text_overlay{
-  color: white;
-  font-size:30px;
-  font-weight:bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+                                      /*BOOK NOW*/
+.whychoose 
+{
+    padding:10px;
+    width:600px;
+    height:450px;
 }
-
+.feedback 
+{
+    width:150px;
+    height:50px;
+    color:black;
+    background-color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    border-radius:20px;
+    text-align: center;
+    margin:auto auto;
+}
+                         
 /*Services styles -------------------------------------------------*/
-
+.box
+{
+    height:300px;
+    margin-top:30px;
+}
 .service_box 
 {
     max-width:380px;
@@ -207,6 +201,7 @@ html {
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
     margin-top:10px;
+    font-family: 'Lato', sans-serif;
 }
 .service_icon 
 {
@@ -268,7 +263,19 @@ html {
     text-align:center;
     margin:auto auto;
 }
-
+                              /*FOOTER STYLES*/
+.social_icon
+{
+    width:50px;
+    height:50px;
+    margin-left:10px;
+    display:inline-block;
+    background: #191919;
+    border-radius: 50%;
+    text-align:center;
+} 
+                                    /*MEDIA QUERIES*/
+                                    
 @media (max-width: 575.98px) {
 .text 
 {
@@ -333,7 +340,8 @@ html {
 </head>
 <body>
 
-<!-- NAVBAR -->
+                                          <!-- NAVBAR -->
+
 <div class="navbar-fixed" style="position:fixed;top:0;width:100%;font-family: 'Poppins', sans-serif;">
     <nav style="height:65px;width:100%;background-color:#272727;box-shadow:none;">
         <div class="nav-wrapper">
@@ -342,8 +350,8 @@ html {
             <ul class="right hide-on-med-and-down">
                 <li><a href="#top" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Home</a></li>
                 <li><a href="#about" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">About Us</a></li>
-                <li><a href="#services" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Services</a></li>
-                <!-- <li><a href="#footer" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Book Now</a></li> -->
+                <li><a href="#offerings" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Gallery</a></li>
+                <li><a href="#services1" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Services</a></li>
                 <li><a href="#footer" style="color:white;margin-right:15px;font-size:20px;font-weight:bold;font-style:normal;">Contact</a></li>
             </ul>
         </div>
@@ -352,10 +360,12 @@ html {
 <ul class="sidenav" id="mobile-demo" style="font-style:normal;font-family: 'Poppins', sans-serif;">
     <li><a class="sidenav-close" href="#top">Home</a></li>
     <li><a class="sidenav-close" href="#about">About Us</a></li>
-    <li><a class="sidenav-close" href="#services">Services</a></li>
+    <li><a class="sidenav-close" href="#offerings">Gallery</a></li>
+    <li><a class="sidenav-close" href="#services1">Services</a></li>
     <li><a class="sidenav-close" href="#footer">Contact</a></li>
 </ul>
-<!-- HEADER IMAGE-->
+                                  <!-- HEADER IMAGE-->
+
 <div class="jumbotron-fluid" id="top" style="font-family: 'Poppins', sans-serif;">
    <div class="container-fluid" style="font-style: normal;">
         <div class="row">
@@ -371,9 +381,6 @@ html {
         <div class="col-12">
            <div style="margin-top:30px;color:#323648;font-weight:bold;font-size:40px;text-align:center;font-family: 'Poppins', sans-serif;">WELCOME TO OUR UNISEX SALON</div> 
         </div>
-        <!-- <div class="col-12">
-            <div style="margin-top:20px;font-size:30px;text-align:center;color:#323648;">We Make Your Hair Look Great, Perfect!</div> 
-        </div> -->
         <div class="col-12">
            <div style="text-align:center;margin-top:10px;letter-spacing:2px;font-size:20px;font-family: 'Source Sans Pro', sans-serif;">SalonAtDoorStep provides you an amazing opportunity to get you a new look at your home. 
             Our team of certified professionals and dedicated staff will strive to provide the highest level of professionalism to each and every client, thereby building a long-lasting relationship of trust and commitment.
@@ -381,7 +388,6 @@ html {
             We hope to pleasantly surprise each and every client with this high level of service and a mutual respect for each other’s lives and valuable time.
             We promise always to do our part to ensure that our clients are given the benefits of the latest  services with the highest skills available in hair salons at their home along with keeping abreast with the best and latest products.</div>
         </div>
-
     </div>
 </div>
 <div class="container-fluid" style="margin-top:50px;font-style:normal;">
@@ -393,7 +399,6 @@ html {
             <div class="row">
                 <div class="col-12" style="text-align:center;margin-top:20px;"><i class="fas fa-cut" style="font-size:40px;color:#da9d40;padding:10px;"></i></div>
                 <div class="col-12"style="margin-top:10px;color:#323648;font-weight:bold;font-size:35px;text-align:center;font-family: 'Poppins', sans-serif;">Safe and Secure Service in COVID-19</div> 
-                <!-- <div class="col-12" style="margin-top:5px;font-size:20px;text-align:center;color:#323648;font-family: 'Poppins', sans-serif;">FOR MAN GROWING BEARDS!</div>  -->
                 <div class="col-12" style="text-align:justify;font-size:16px;margin-top:20px;letter-spacing:2px;font-family: 'Source Sans Pro', sans-serif">As we work as a community to prepare for the impact of COVID-19, we wanted to share how SalonAtDoorstep is addressing the current situation. The health and safety of our employees, customers, and communities are our primary concern. There are a number of measures we are taking to ensure we manage to safely get through this fluid situation while continuing to serve our customers, partners, and employees effectively.</div>
             </div>
          </div>
@@ -512,7 +517,9 @@ html {
         </div>
     </div>
 </section> 
-<div class="container-fluid" id="book" style="background:#f6f6f6;margin-top:50px;font-family: 'Poppins', sans-serif;font-style:normal;">
+                                        <!--BOOK NOW-->
+<section id="book">
+  <div class="container-fluid" style="background:#f6f6f6;margin-top:50px;font-family: 'Poppins', sans-serif;font-style:normal;">
     <div class="row">
         <div class="col-lg-6 col-xs-12">
             <div class="row">
@@ -523,8 +530,6 @@ html {
             <div class="row" style="margin-top:70px;">
                 <div class="col-6"><div style="text-align:center;font-size:20px;">Book An Appointment</div></div>
                 <div class="col-6"><div style="text-align:center;font-size:20px;">Submit Your Feedback</div></div>
-                <!-- <div class="col-6"><div style="text-align:center;word-spacing:2px;font-size:15px;">Ready to book? Click on the button to schedule your next appointment . We are looking forward to take care of you!</div></div>
-                <div class="col-6"><div style="text-align:center;word-spacing:2px;font-size:15px;">Please help us improve our service by filling out this feedback form. We highly appreciate your involvement. Thank you!</div></div> -->
                 <div class="col-6"><div class="feedback"><a  href="https://forms.gle/AXJmELd2cLC627zz8" target="_blank"><i class="far fa-calendar-check" style="color:white;font-size:30px;padding:5px;"></i></a></div></div>
                 <div class="col-6"><div class="feedback"><a  href="https://forms.gle/UrCdD7D2fCQGgi769" target="_blank"><i class="fas fa-comment-alt" style="color:white;font-size:30px;padding:8px;"></i></a></div></div>
              </div>
@@ -534,6 +539,8 @@ html {
         </div>
     </div>
 </div>
+</section>
+                                            <!--SERVICES-->              
 <section id="services1"> 
   <div class="container-fluid">
       <div class="row">
@@ -607,9 +614,6 @@ html {
                       <div class="col-12">
                           <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Hair Stylers</div>
                       </div>
-                      <!-- <div class="col-12">
-                          <div style="text-align:center;font-size:20px;">FOR MAN GROWING BEARDS!</div>
-                      </div> -->
                       <div class="col-12">
                           <div style="text-align:center;margin-top:20px;letter-spacing: 2px;font-size:16px;">Blessed are the hairstylers, for they bring out the beauty in others.     
                               Here are hairstylers are going to give you a new look, a new you at your own home. So what are you waiting for?
@@ -627,9 +631,6 @@ html {
                       <div class="col-12">
                           <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Skilled Stylers</div>
                       </div>
-                      <!-- <div class="col-12">
-                          <div style="text-align:center;font-size:20px;">FOR MAN GROWING BEARDS!</div>
-                      </div> -->
                       <div class="col-12">
                           <div style="text-align:center;margin-top:10px;letter-spacing: 2px;font-size:16px;">Our hair stylers are specially trained to create the perfect look for your individual style, head shape and hair density. We treat each guest as a masterpiece and refine your look to deliver the ultimate experience in men’s grooming and hair care.</div>
                       </div>
@@ -645,9 +646,6 @@ html {
                       <div class="col-12">
                           <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Beard Grooming</div>
                       </div>
-                      <!-- <div class="col-12">
-                          <div style="text-align:center;font-size:20px;">FOR MAN GROWING BEARDS!</div>
-                      </div> -->
                       <div class="col-12">
                           <div style="text-align:center;margin-top:10px;letter-spacing: 2px;font-size:16px;">Grow with care, wear with pride. Men don't cry, they water their beard!
                               Once said, "Men don’t keep calm but when it comes to Beards they DO!"
@@ -661,6 +659,7 @@ html {
       </div>
   </div>  
 </div>
+                                            <!--FOOTER-->
 <div class="container-fluid" id="footer" style="background-color:black;position: absolute;font-style:normal;">
     <div class="row">
         <div class="col-12">
