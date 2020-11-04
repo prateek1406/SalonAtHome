@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/materialize.min.css">  
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
          
 <style>
@@ -122,30 +123,6 @@ html {
     width:600px;
     height:450px;
 }
-#features
-{
-  background-color:white;
-  padding:7% 15%;
-  position:relative;
-  z-index:1;
-}
-.feature-box
-{
-  text-align:center;
-  padding:5%;
-}
-.feature-icon
-{
-  margin-bottom:10px;
-  color:#ef8172;;
-  font-size:60px;
-  text-align:center;
-  padding:10px;
-}
-.feature-icon:hover
-{
-  color:#ff4c68;
-}
 
 .container {
   position: relative;
@@ -171,6 +148,7 @@ html {
   width: 100%;
   height: 0;
   transition: 1.2s ease;
+  /* font-family: 'Pacifico', cursive; */
 }
 .hair_cut 
 {
@@ -213,6 +191,84 @@ html {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/*Services styles -------------------------------------------------*/
+
+.service_box 
+{
+    max-width:380px;
+    height:400px;
+    margin:auto auto;
+    border-radius: 12px;
+    /* box-shadow: 1px 1px 18px 0 rgba(0,0,0,.08); */
+    padding: 60px 30px 70px;
+    background: #fff;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    margin-top:10px;
+}
+.service_icon 
+{
+    width:70px;
+    height:70px;
+    text-align:center;
+}
+.service_box:hover 
+{
+    background-color:#FC3D6A;
+    /* background-color: #EFA697; */
+    color:white;
+}
+.doorstep:hover .service_doorstep
+{ 
+    content:url('img/flaticon_icon/arrival_white.svg');
+    width:70px;
+    height:70px;
+    text-align:center;
+    margin:auto auto;
+}
+.stylists:hover .service_stylists
+{ 
+    content:url('img/flaticon_icon/favorite_white.svg');
+    width:70px;
+    height:70px;
+    text-align:center;
+    margin:auto auto;
+}
+.quality:hover .service_quality
+{ 
+    content:url('img/flaticon_icon/customer-service_white.svg');
+    width:70px;
+    height:70px;
+    text-align:center;
+    margin:auto auto;
+}
+.brand_products:hover .service_products
+{ 
+    content:url('img/flaticon_icon/cosmetics_white.svg');
+    width:70px;
+    height:70px;
+    text-align:center;
+    margin:auto auto;
+}
+.day_support:hover .service_daysupport
+{ 
+    content:url('img/flaticon_icon/suppor_white.svg');
+    width:70px;
+    height:70px;
+    text-align:center;
+    margin:auto auto;
+}
+.satisfaction:hover .service_satisfaction
+{ 
+    content:url('img/flaticon_icon/customer-satisfaction_white.svg');
+    width:70px;
+    height:70px;
+    text-align:center;
+    margin:auto auto;
+}
+
 @media (max-width: 575.98px) {
 .text 
 {
@@ -343,6 +399,7 @@ html {
          </div>
     </div>
 </div>
+                                        <!--Offerings Section-->
 <section id="offerings">
     <div class="container-fluid">
         <div class="row">
@@ -353,15 +410,21 @@ html {
                 <div class="container">
                   <img src="img/hairdresser.jpg" alt="Avatar" class="image hair_cut">
                   <div class="overlay">
-                    <div class="text_overlay">Hair Dressing</div>
+                    <div class="text_overlay">
+                      <div style="font-weight:bold;font-style:normal;">Hair Dressing</div>
+                      <div style="font-size:17px;text-align:center;font-style:normal;">Your life may not be perfect, but ensure your haircut is!</div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="container">
-                  <img src="img/beard1.jpg" alt="Avatar" class="image beard_grooming">
+                  <img src="img/beard.jpg" alt="Avatar" class="image beard_grooming">
                   <div class="overlay">
-                    <div class="text_overlay">Beard Grooming</div>
+                    <div class="text_overlay">
+                      <div style="font-weight:bold;font-style:normal;">Beard Grooming</div>
+                      <div style="font-size:17px;text-align:center;font-style:normal;">Grooming is the secret of real elegance. Don’t underestimate it.</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -369,7 +432,10 @@ html {
                   <div class="container">
                       <img src="img/facial1.jpeg" alt="Avatar" class="image facial">
                       <div class="overlay">
-                        <div class="text_overlay">Facial</div>
+                        <div class="text_overlay">
+                          <div style="font-weight:bold;font-style:normal;">Facial</div>
+                          <div style="font-size:17px;text-align:center;font-style:normal;">A good skin begin with clean skin and Facials are workouts for your skin.</div>
+                        </div>
                       </div>
                     </div>
               </div>
@@ -378,7 +444,10 @@ html {
                 <div class="container">
                     <img src="img/pedic.jpg" alt="Avatar" class="image pedic_medic">
                     <div class="overlay">
-                      <div class="text_overlay">Manicure & Pedicure</div>
+                      <div class="text_overlay">
+                        <div style="font-weight:bold;font-style:normal;">Manicure & Pedicure</div>
+                        <div style="font-size:17px;text-align:center;font-style:normal;">Nothing improves your mood like a fresh manicure!</div>
+                      </div>
                     </div>
                   </div>
             </div>
@@ -386,7 +455,10 @@ html {
               <div class="container">
                   <img src="img/massage1.jpg" alt="Avatar" class="image massage">
                   <div class="overlay">
-                    <div class="text_overlay">Body Massage</div>
+                    <div class="text_overlay">
+                      <div style="font-weight:bold;font-style:normal;">Body Massage</div>
+                      <div style="font-size:17px;text-align:center;font-style:normal;">Give your body a little love, it deserves it.</div>
+                    </div>
                   </div>
                 </div>
           </div>
@@ -394,7 +466,10 @@ html {
             <div class="container">
                 <img src="img/polishing.jpg" alt="Avatar" class="image polishing" style="height:290px;">
                 <div class="overlay">
-                  <div class="text_overlay">Body Polishing</div>
+                  <div class="text_overlay">
+                    <div style="font-weight:bold;font-style:normal;">Body Polishing</div>
+                    <div style="font-size:17px;text-align:center;font-style:normal;">Body polishing is for all those people who wish to give their skin some extra care.</div>
+                  </div>
                 </div>
               </div>
           </div>
@@ -403,7 +478,11 @@ html {
             <div class="container">
                 <img src="img/threading.jpg" alt="Avatar" class="image" style="height:290px;">
                 <div class="overlay">
-                  <div class="text_overlay">Threading</div>
+                  <div class="text_overlay">
+                    <div style="font-weight:bold;font-style:normal;">Threading</div>
+                    <div style="font-size:17px;text-align:center;font-style:normal;">What's the only thing you can get into shape without exercising? 
+                      Your Eyebrows</div>
+                  </div>
                 </div>
               </div>
           </div>
@@ -411,7 +490,10 @@ html {
             <div class="container">
                 <img src="img/waxing.jpeg" alt="Avatar" class="image" style="height:290px;">
                 <div class="overlay">
-                  <div class="text_overlay">Waxing</div>
+                  <div class="text_overlay">
+                    <div style="font-weight:bold;font-style:normal;">Waxing</div>
+                    <div style="font-size:17px;text-align:center;font-style:normal;">Waxing is not a luxury. It's  a necessity.</div>
+                  </div>
                 </div>
               </div>
           </div>
@@ -419,15 +501,16 @@ html {
             <div class="container">
                 <img src="img/hair_spa.jpeg" alt="Avatar" class="image" style="height:290px;">
                 <div class="overlay">
-                  <div class="text_overlay">Hair Spa</div>
+                  <div class="text_overlay">
+                    <div style="font-weight:bold;font-style:normal;">Hair Spa</div>
+                    <div style="font-size:17px;text-align:center;font-style:normal;">Fresh out of hair spa, your gorgeous hair does all the talking.</div>
+                  </div>
                 </div>
               </div>
           </div>
           <div class="col-12" style="height:30px;"></div>
         </div>
     </div>
-
-
 </section> 
 <div class="container-fluid" id="book" style="background:#f6f6f6;margin-top:50px;font-family: 'Poppins', sans-serif;font-style:normal;">
     <div class="row">
@@ -451,94 +534,133 @@ html {
         </div>
     </div>
 </div>
-<div class="container-fluid" id="services" style="margin-top:50px;font-style:normal;">
-    <div class="row">
-        <div class="col-lg-4 col-xs-12 col-md-4">
-            <div class="box">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12" style="text-align:center;padding:20px;"><i class="fas fa-cut" style="font-size:40px;color:#da9d40;"></i></div>
-                        <div class="col-12">
-                            <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Hair Stylers</div>
-                        </div>
-                        <!-- <div class="col-12">
-                            <div style="text-align:center;font-size:20px;">FOR MAN GROWING BEARDS!</div>
-                        </div> -->
-                        <div class="col-12">
-                            <div style="text-align:center;margin-top:20px;letter-spacing: 2px;font-size:16px;">Blessed are the hairstylers, for they bring out the beauty in others.     
-                                Here are hairstylers are going to give you a new look, a new you at your own home. So what are you waiting for?
-                                Book an appointment soon!</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-xs-12 col-md-4">
-            <div class="box">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12" style="text-align:center;padding:20px;"><i class="fas fa-puzzle-piece" style="color: #da9d40;font-size:40px;"></i></div>
-                        <div class="col-12">
-                            <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Skilled Stylers</div>
-                        </div>
-                        <!-- <div class="col-12">
-                            <div style="text-align:center;font-size:20px;">FOR MAN GROWING BEARDS!</div>
-                        </div> -->
-                        <div class="col-12">
-                            <div style="text-align:center;margin-top:10px;letter-spacing: 2px;font-size:16px;">Our hair stylers are specially trained to create the perfect look for your individual style, head shape and hair density. We treat each guest as a masterpiece and refine your look to deliver the ultimate experience in men’s grooming and hair care.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-xs-12 col-md-4">
-            <div class="box">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12" style="text-align:center;padding:20px;"><i class="fas fa-sliders-h" style="color:#da9d40;font-size:40px;"></i></div>
-                        <div class="col-12">
-                            <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Beard Grooming</div>
-                        </div>
-                        <!-- <div class="col-12">
-                            <div style="text-align:center;font-size:20px;">FOR MAN GROWING BEARDS!</div>
-                        </div> -->
-                        <div class="col-12">
-                            <div style="text-align:center;margin-top:10px;letter-spacing: 2px;font-size:16px;">Grow with care, wear with pride. Men don't cry, they water their beard!
-                                Once said, "Men don’t keep calm but when it comes to Beards they DO!"
-                                Why to keep calm? 
-                                Hurry up! 
-                                Book an appointment and show some love for your beard.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>  
-</div>
-<section id="features">
-
-    <div class="container-fluid">
+<section id="services1"> 
+  <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4 col-xs-12 feature-box">
-          <i class="fas fa-check-circle feature-icon"></i>
-          <h3>Easy to use.</h3>
-          <p>So easy to use, even your dog could do it.</p>
+        <div class="col-12">
+          <div style="margin-top:30px;color:#323648;font-weight:bold;font-size:40px;text-align:center;font-family: 'Poppins', sans-serif;font-style:normal;">Our Services</div> 
+       </div>
+       <div class="col-lg-4 col-xs-12 col-md-6">
+         <div class="service_box doorstep" style="font-style:normal;">
+           <div class="row">
+             <div class="col-12"><div style="text-align:center;"><img class="service_icon service_doorstep" src="img/flaticon_icon/arrival.svg"></div></div>
+             <div class="col-12"><div style="text-align:center;padding:20px;font-size:25px;font-weight:bold;text-transform:uppercase;">Service at your place</div></div>
+             <div class="col-12"><div style="text-align:center;font-size:17px;">At Doorstep Services, we provide you with a variety of home services that simplify your everyday living. All you have to do is, Place request, Sit back and relax.</div></div>
+           </div>
+          </div>
+       </div>
+       <div class="col-lg-4 col-xs-12 col-md-6">
+         <div class="service_box stylists" style="font-style:normal;">
+           <div class="row">
+             <div class="col-12"><div style="text-align:center;"><img class="service_icon service_stylists" src="img/flaticon_icon/favorite.svg"></div></div>
+             <div class="col-12"><div style="text-align:center;padding:20px;font-size:25px;font-weight:bold;text-transform:uppercase;">Professional  stylists </div></div>
+             <div class="col-12"><div style="text-align:center;font-size:17px;">A stylist is a trusted advisor in all aspects of your hair, beauty, lifestyle and anything else that will enable you to fulfill your personal or professional requirements.</div></div>
+           </div>
+          </div>
         </div>
-
-        <div class="col-lg-4 col-xs-12 feature-box">
-          <i class="fas fa-heart feature-icon"></i>
-          <h3>Elite Clientele</h3>
-          <p>We have all the dogs, the greatest dogs.</p>
+        <div class="col-lg-4 col-xs-12 col-md-6">
+          <div class="service_box quality" style="font-style:normal;">
+            <div class="row">
+              <div class="col-12"><div style="text-align:center;"><img class="service_icon service_quality" src="img/flaticon_icon/customer-service.svg"></div></div>
+              <div class="col-12"><div style="text-align:center;padding:20px;font-size:25px;font-weight:bold;text-transform:uppercase;">Quality Service</div></div>
+              <div class="col-12"><div style="text-align:center;font-size:17px;">SalonAtDoorstep provides quality service. We believe in, "When you serve the customer better, they always return on your investment.</div></div>
+            </div>
+          </div>
         </div>
-
-        <div class="col-lg-4 col-xs-12 feature-box">
-          <i class="fas fa-bullseye feature-icon"></i>
-          <h3>Guaranteed to work.</h3>
-          <p>Find the love of your dog's life or your money back.</p>
+        <div class="col-lg-4 col-xs-12 col-md-6">
+          <div class="service_box brand_products" style="font-style:normal;">
+            <div class="row">
+              <div class="col-12"><div style="text-align:center;"><img class="service_icon service_products" src="img/flaticon_icon/cosmetics.svg"></div></div>
+              <div class="col-12"><div style="text-align:center;padding:20px;font-size:25px;font-weight:bold;text-transform:uppercase;">Branded Products</div></div>
+              <div class="col-12"><div style="text-align:center;font-size:17px;">We keep an eye on all the latest trends and the hottest new branded products - making sure you don't miss a trick when it comes to pushing your brand!</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xs-12 col-md-6">
+          <div class="service_box day_support" style="font-style:normal;">
+            <div class="row">
+              <div class="col-12"><div style="text-align:center;"><img class="service_icon service_daysupport" src="img/flaticon_icon/support.svg"></div></div>
+              <div class="col-12"><div style="text-align:center;padding:20px;font-size:25px;font-weight:bold;text-transform:uppercase;">All day support</div></div>
+              <div class="col-12"><div style="text-align:center;font-size:17px;">In today’s fast-paced world, customers demand service at any time of day, on any day of the week. SalonAtDoorstep offers  best 24/7 customer service.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xs-12 col-md-6">
+          <div class="service_box satisfaction" style="font-style:normal;">
+            <div class="row">
+              <div class="col-12"><div style="text-align:center;"><img class="service_icon service_satisfaction" src="img/flaticon_icon/customer-satisfaction.svg"></div></div>
+              <div class="col-12"><div style="text-align:center;padding:20px;font-size:25px;font-weight:bold;text-transform:uppercase;">100% percent satisfaction</div></div>
+              <div class="col-12"><div style="text-align:center;font-size:17px;">We look-after our clients and want to make them feel relaxed as soon as our stylist walks in.We believe in providing 100% client satisfaction by ensuring the best we can offer.</div></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+  </div> 
+</section>
+<div class="container-fluid" id="services" style="margin-top:50px;font-style:normal;">
+  <div class="row">
+      <div class="col-lg-4 col-xs-12 col-md-4">
+          <div class="box">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-12" style="text-align:center;padding:20px;"><i class="fas fa-cut" style="font-size:40px;color:#da9d40;"></i></div>
+                      <div class="col-12">
+                          <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Hair Stylers</div>
+                      </div>
+                      <!-- <div class="col-12">
+                          <div style="text-align:center;font-size:20px;">FOR MAN GROWING BEARDS!</div>
+                      </div> -->
+                      <div class="col-12">
+                          <div style="text-align:center;margin-top:20px;letter-spacing: 2px;font-size:16px;">Blessed are the hairstylers, for they bring out the beauty in others.     
+                              Here are hairstylers are going to give you a new look, a new you at your own home. So what are you waiting for?
+                              Book an appointment soon!</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-xs-12 col-md-4">
+          <div class="box">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-12" style="text-align:center;padding:20px;"><i class="fas fa-puzzle-piece" style="color: #da9d40;font-size:40px;"></i></div>
+                      <div class="col-12">
+                          <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Skilled Stylers</div>
+                      </div>
+                      <!-- <div class="col-12">
+                          <div style="text-align:center;font-size:20px;">FOR MAN GROWING BEARDS!</div>
+                      </div> -->
+                      <div class="col-12">
+                          <div style="text-align:center;margin-top:10px;letter-spacing: 2px;font-size:16px;">Our hair stylers are specially trained to create the perfect look for your individual style, head shape and hair density. We treat each guest as a masterpiece and refine your look to deliver the ultimate experience in men’s grooming and hair care.</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-xs-12 col-md-4">
+          <div class="box">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-12" style="text-align:center;padding:20px;"><i class="fas fa-sliders-h" style="color:#da9d40;font-size:40px;"></i></div>
+                      <div class="col-12">
+                          <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Beard Grooming</div>
+                      </div>
+                      <!-- <div class="col-12">
+                          <div style="text-align:center;font-size:20px;">FOR MAN GROWING BEARDS!</div>
+                      </div> -->
+                      <div class="col-12">
+                          <div style="text-align:center;margin-top:10px;letter-spacing: 2px;font-size:16px;">Grow with care, wear with pride. Men don't cry, they water their beard!
+                              Once said, "Men don’t keep calm but when it comes to Beards they DO!"
+                              Why to keep calm? 
+                              Hurry up! 
+                              Book an appointment and show some love for your beard.</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>  
+</div>
 <div class="container-fluid" id="footer" style="background-color:black;position: absolute;font-style:normal;">
     <div class="row">
         <div class="col-12">
