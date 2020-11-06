@@ -22,17 +22,73 @@ body
 html {
   scroll-behavior: smooth;
 }
+.hiring_button
+{
+    width:150px;
+    height:50px;
+    color:black;
+    background-color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    border-radius:20px;
+    text-align: center;
+    margin:auto auto;
+    cursor:pointer;
+    /* padding:10px; */
+}
+.hiring_image 
+{
+    width:600px;
+    height:440px;
+}
+.hiring_text 
+{
+    font-size:40px;
+    text-align:left;
+    padding:20px;
+    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+}
+.himage_container 
+    {
+        text-align:center;
+    }
+@media (max-width: 575.98px) {
+    .hiring_image
+    {
+        max-width:350px;
+        height:300px;
+    }
+    .himage_container 
+    {
+        text-align:center;
+    }
+    .hiring_text 
+{
+    font-size:30px;
+    text-align:left;
+    padding:17px;
+    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+}
 
+}
 </style>
 </head>
 <body>
 <section id="hiring" style="background-color:#f6f6f6;padding:20px 20px;">
-    
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12"><div style="text-align:center;font-size:30px;font-family: 'Poppins', sans-serif;">WE ARE HIRING</div></div>
-            <div class="col-lg-6 col-xs-12"></div>
-            <div class="col-lg-6 col-xs-12"><div style="text-align:center;"><img src="img/hiring_back.png" style="width:400px;height:300px;"></div></div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="row">
+                    <div class="col-12"><div class="hiring_text">WE ARE HIRING</div></div>
+                    <div class="col-12">
+                        <div style="padding:20px 20px;color:black;font-size:18px;text-align:justify;">At SalonAtDoorstep, we're looking for hard-working, passionate people to help us create the next million jobs in India. SalonAtDoorstep is a big family of 100+ employees and we are constantly growing. We respect our employees and are dedicated to provide a challenging and congenial work environment. If you are looking for working in an environment which is full of growth along with fun, which would put your professional skills to test every moment of the day, then Salon At Doorstep is the right place for you. Do not wait or think anymore. Send your resume right away.
+                    </div>
+                    <div class="col-lg-4 col-xs-12"><div class="hiring_button"><a  href="" target="_blank"><i class="fas fa-briefcase" style="color:white;font-size:30px;padding:5px;"></i></a></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12"><div class="himage_container"><img class="hiring_image" src="img/hiring_image.png"></div></div>
         </div>
     </div>
 </section>
