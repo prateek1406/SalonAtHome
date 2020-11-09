@@ -191,13 +191,13 @@ html {
     border: 2px solid cornflowerblue;
     border-radius:20px;
     text-align: center;
-    margin:auto auto;
     cursor:pointer;
 }
 .hiring_image 
 {
-    width:600px;
-    height:440px;
+    width:450px;
+    height:450px;
+    padding:20px 20px;
 }
 .hiring_text 
 {
@@ -208,10 +208,27 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 .himage_container 
-    {
-        text-align:center;
-    }
-
+{
+  text-align:center;
+}
+  .hiring_description 
+  {
+    padding:20px 20px;
+    color:black;
+    font-size:18px;
+    text-align:justify;
+  }
+#hiring 
+{
+  padding:10px 10px;
+}
+.apply_here_text 
+{
+  margin:auto auto;
+  padding:10px;
+  font-size:20px;
+  font-family: 'Poppins', sans-serif;
+}
 /*Services styles -------------------------------------------------*/
 
 .box
@@ -221,8 +238,8 @@ html {
 }
 .service_box 
 {
-    max-width:380px;
-    height:420px;
+    max-width:400px;
+    max-height:440px;
     margin-top:10px;
     margin:auto auto;
     border-radius: 12px;
@@ -368,21 +385,38 @@ html {
   /* margin-left:20px; */
 }
 .hiring_image
-    {
-        max-width:350px;
-        height:300px;
-    }
-    .himage_container 
-    {
-        text-align:center;
-    }
-    .hiring_text 
+{
+    max-width:290px;
+    height:300px;       
+}
+.himage_container 
+{
+  text-align:center;
+}
+.hiring_description
+{
+  text-align:center;
+  font-size:16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.hiring_button 
+{
+  margin:auto auto;
+}
+.hiring_text 
 {
     font-size:30px;
-    text-align:left;
+    text-align:center;
     padding:17px;
     font-weight:bold;
     font-family: 'Poppins', sans-serif;
+}
+.apply_here_text 
+{
+  text-align:center;
+  padding:10px;
+  font-size:20px;
+  font-family: 'Poppins', sans-serif;
 }
  }
 </style>
@@ -652,80 +686,27 @@ html {
         </div>
       </div>
   </div> 
-</section>
-<!-- <div class="container-fluid" id="services" style="margin-top:50px;font-style:normal;">
-  <div class="row">
-      <div class="col-lg-4 col-xs-12 col-md-4">
-          <div class="box">
-              <div class="container-fluid">
-                  <div class="row">
-                      <div class="col-12" style="text-align:center;padding:20px;"><i class="fas fa-cut" style="font-size:40px;color:#da9d40;"></i></div>
-                      <div class="col-12">
-                          <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Hair Stylers</div>
-                      </div>
-                      <div class="col-12">
-                          <div style="text-align:center;margin-top:20px;letter-spacing: 2px;font-size:16px;">Blessed are the hairstylers, for they bring out the beauty in others.     
-                              Here are hairstylers are going to give you a new look, a new you at your own home. So what are you waiting for?
-                              Book an appointment soon!</div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-4 col-xs-12 col-md-4">
-          <div class="box">
-              <div class="container-fluid">
-                  <div class="row">
-                      <div class="col-12" style="text-align:center;padding:20px;"><i class="fas fa-puzzle-piece" style="color: #da9d40;font-size:40px;"></i></div>
-                      <div class="col-12">
-                          <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Skilled Stylers</div>
-                      </div>
-                      <div class="col-12">
-                          <div style="text-align:center;margin-top:10px;letter-spacing: 2px;font-size:16px;">Our hair stylers are specially trained to create the perfect look for your individual style, head shape and hair density. We treat each guest as a masterpiece and refine your look to deliver the ultimate experience in men’s grooming and hair care.</div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-4 col-xs-12 col-md-4">
-          <div class="box">
-              <div class="container-fluid">
-                  <div class="row">
-                      <div class="col-12" style="text-align:center;padding:20px;"><i class="fas fa-sliders-h" style="color:#da9d40;font-size:40px;"></i></div>
-                      <div class="col-12">
-                          <div style="text-align:center;font-weight:bold;font-size:24px;letter-spacing: 1px;font-family: 'Poppins', sans-serif;">Beard Grooming</div>
-                      </div>
-                      <div class="col-12">
-                          <div style="text-align:center;margin-top:10px;letter-spacing: 2px;font-size:16px;">Grow with care, wear with pride. Men don't cry, they water their beard!
-                              Once said, "Men don’t keep calm but when it comes to Beards they DO!"
-                              Why to keep calm? 
-                              Hurry up! 
-                              Book an appointment and show some love for your beard.</div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>  
-</div> -->
-                                          <!--HIRING SECTION-->
-<section id="hiring" style="background-color:#f6f6f6;padding:20px 20px;font-style: normal;">
+</section>                                         
+                              <!--HIRING SECTION-->
+
+<section id="hiring" style="background-color:#f6f6f6;font-style: normal;">
   <div class="container-fluid">
       <div class="row">
           <div class="col-lg-6 col-xs-12">
+            <div class="container-fluid">
               <div class="row">
                   <div class="col-12"><div class="hiring_text">WE ARE HIRING</div></div>
                   <div class="col-12">
-                      <div style="padding:20px 20px;color:black;font-size:18px;text-align:justify;">At SalonAtDoorstep, we're looking for hard-working, passionate people to help us create the next million jobs in India. SalonAtDoorstep is a big family of 100+ employees and we are constantly growing. We respect our employees and are dedicated to provide a challenging and congenial work environment. If you are looking for working in an environment which is full of growth along with fun, which would put your professional skills to test every moment of the day, then Salon At Doorstep is the right place for you. Do not wait or think anymore. Send your resume right away.
+                      <div class="hiring_description">At SalonAtDoorstep, we're looking for hard-working, passionate people to help us create the next million jobs in India. SalonAtDoorstep is a big family of 100+ employees and we are constantly growing. We respect our employees and are dedicated to provide a challenging and congenial work environment. If you are looking for working in an environment which is full of growth along with fun, which would put your professional skills to test every moment of the day, then Salon At Doorstep is the right place for you. Do not wait or think anymore. Send your resume right away.</div>
                   </div>
-                  <div class="col-lg-4 col-xs-12"><div style="margin:auto auto;padding:10px;font-size:20px;font-family: 'Poppins', sans-serif;">Apply Here</div></div>
-                  <div class="col-lg-4 col-xs-12"><div class="hiring_button"><a  href="" target="_blank"><i class="fas fa-briefcase" style="color:white;font-size:30px;padding:5px;"></i></a></div></div>
+                  <div class="col-lg-12 col-xs-12"><div class="apply_here_text" style="">Apply Here</div></div>
+                  <div class="col-12"><div class="hiring_button"><a  href="" target="_blank"><i class="fas fa-briefcase" style="color:white;font-size:30px;padding:5px;"></i></a></div></div>
               </div>
+            </div>
           </div>
+          <div class="col-lg-6 col-xs-12"><div class="himage_container"><img class="hiring_image" src="img/hiring_image.png"></div></div>
       </div>
-      <div class="col-lg-6 col-xs-12"><div class="himage_container"><img class="hiring_image" src="img/hiring_image.png"></div></div>
-      </div>
-  </div>
+    </div>
 </section>
                                             <!--FOOTER-->
 <div class="container-fluid" id="footer" style="background-color:black;position: absolute;font-style:normal;">
