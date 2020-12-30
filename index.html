@@ -18,6 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
          
 <style>
+
 body
 {
     color:black;
@@ -27,6 +28,14 @@ body
 }
 html {
   scroll-behavior: smooth;
+}
+#loading 
+{
+  position: fixed;
+  width:100%;
+  height:100vh;
+  background:#fff url('img/Infinity-1.7s-200px.gif') center no-repeat;
+  z-index:9999;
 }
 /* Header Image Styles*/
 .jumbotron-fluid
@@ -43,7 +52,7 @@ html {
    background-position:center;
    height:450px;
    position: relative;
-   margin-top:60px;
+   /* margin-top:60px; */
 
 }
 /*HEADER TEXT STYLES*/
@@ -456,11 +465,14 @@ html {
  }
 </style>
 </head>
-<body>
+<body onload="myFunction()">
+  <div id="loading">
+
+  </div>
 
                                           <!-- NAVBAR -->
 
-<div class="navbar-fixed" style="position:fixed;top:0;width:100%;font-family: 'Poppins', sans-serif;">
+<div class="navbar-fixed" style="top:0;width:100%;font-family: 'Poppins', sans-serif;">
     <nav style="height:65px;width:100%;background-color:#272727;box-shadow:none;">
         <div class="nav-wrapper">
             <a href="https://www.salonatdoorstep.in/" class="brand-logo left"><img src="img/logo.jpg" class="logo" alt="logo" style="height:63px;margin-left:10px;" /></a>
@@ -910,6 +922,13 @@ var instances = M.Sidenav.init(elems, {edge:'right'});
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 <script src="owl.carousel.min.js"></script>
+<script>
+
+  function myFunction()
+   {
+       document.getElementById('loading').style.display='none';
+   };
+  </script>
 <script>
   var owl = $('.owl-carousel');
 owl.owlCarousel({
